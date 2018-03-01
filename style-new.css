@@ -1,0 +1,179 @@
+html {
+  position: relative;
+  height: 100%;
+  font-family: "monospace"; }
+
+body {
+  background-image: url("bg.jpg");
+  background-size: 100% 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  display: table; }
+
+*:focus {
+  outline: none; }
+
+#search {
+  height: 30px;
+  width: 960px;
+  top: 565px;
+  left: 65px; }
+
+#fortune {
+  overflow-y: auto;
+  height: auto;
+  max-height: 360px;
+  width: 460px;
+  top: 185px;
+  left: 65px; }
+
+#rss {
+  overflow-y: scroll;
+  height: 450px;
+  width: 480px;
+  top: 95px;
+  left: 545px; }
+
+#clock {
+  height: 75px;
+  width: 460px;
+  top: 95px;
+  left: 65px; }
+
+.drag {
+  background-color: #0a0d0d;
+  border: 2px solid;
+  border-color: #b8b4ab;
+  border-radius: 0em;
+  position: absolute;
+  color: #596868;
+  padding: 4px;
+  -webkit-transform: translate(0px, 0px);
+  transform: translate(0px, 0px); }
+
+.resize-drag {
+  background-color: #0a0d0d;
+  color: #596868;
+  box-sizing: border-box; }
+
+h3 {
+  font-size: 14px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  margin-top: 0; }
+
+.color1 {
+  color: #b8b4ab;
+  padding: 0; }
+
+.color2 {
+  color: #d8d3cd;
+  padding: 0; }
+
+.color3 {
+  color: #8f857c;
+  padding: 0; }
+
+.color4 {
+  color: #596868;
+  padding: 0; }
+
+.color5 {
+  color: #798d8c;
+  padding: 0; }
+
+.color6 {
+  color: #9eb8b7;
+  padding: 0; }
+
+.color7 {
+  color: #c9e9e7;
+  padding: 0; }
+
+.color8 {
+  color: #46b0ac;
+  padding: 0; }
+
+.color9 {
+  color: #e0c160;
+  padding: 0; }
+
+.color10 {
+  color: #8db3e9;
+  padding: 0; }
+
+.color11 {
+  color: #66aca9;
+  padding: 0; }
+
+.color12 {
+  color: #85b0eb;
+  padding: 0; }
+
+.color13 {
+  color: #e4ace3;
+  padding: 0; }
+
+.color14 {
+  color: #e7959b;
+  padding: 0; }
+
+.color15 {
+  color: #bda765;
+  padding: 0; }
+
+.colorb {
+  color: #0a0d0d;
+  padding: 0; }
+
+.colorf {
+  color: #b7d5d3;
+  padding: 0; }
+
+form {
+  display: inline; }
+
+input {
+  display: inline;
+  background: none;
+  display: inline;
+  border: none;
+  color: #596868;
+  font-size: 14px; }
+
+a:link {
+  color: #798d8c; }
+
+a:visited {
+  color: #798d8c; }
+
+a:hover {
+  color: #9eb8b7; }
+
+a:active {
+  color: #b8b4ab; }
+
+.btn-group .button {
+  background: none;
+  border: none;
+  padding: 2px 2px;
+  text-align: center;
+  font-weight: bold;
+  display: inline-block;
+  font-size: 14px;
+  color: #b7d5d3;
+  cursor: pointer; }
+
+.btn-group .button:hover {
+  color: #798d8c;
+  background-color: none; }
+
+/*# sourceMappingURL=style-test.css.map */
+
+/*# sourceMappingURL=style-new.css.map */

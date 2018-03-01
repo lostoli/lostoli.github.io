@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8">
+<title>H O M E</title>
+<link rel="icon"
+      type="image/png"
+      href="favicon.ico">
+<link rel="stylesheet" href="style-new.css">
+<link rel="stylesheet" href="clock-style.css">
+<script src="interact.js"></script>
+<script src="scripts.js"></script>
+<script src='http://ajax.googleapis.com/ajax/libs/angularjs/1.3.2/angular.min.js'></script>
+<script src="clock/js/index.js"></script>
+<script src="https://www.w3schools.com/lib/w3data.js"></script>
+</head>
+
+<body>
+
+    <div id=search class="drag resize-drag">
+        <form method="get" action="https://www.google.com/search">
+	    <h3><span class="color8">[~]</span><span class="color10">$</span>
+        <input type="text" autofocus size="100" name="q" placeholder="Search Google"></h3>
+        </form>
+    </div>
+
+    <div id=rss class="drag resize-drag" name="NT">
+        <div class="btn-group">
+          <h3><span class="color8">[~]</span><span class="color10">$</span><span class="colorf"> rss</span>
+          <button class="button" onclick="tabNT()"><span class="color10">"Number Theory"</span></button>
+          <button class="button" onclick="tabDS()" style="font-weight:normal">"Dynamical systems"</button>
+          <button class="button" onclick="tabNWS()" style="font-weight:normal">"News"</button>
+          </h3>
+        </div>
+        <div style="clear:both"></div>
+        <script src="//rss.bloople.net/?url=http%3A%2F%2Farxiv.org%2Frss%2Fmath.NT&detail=-1&showtitle=false&showicon=true&type=js"></script>
+    </div>
+
+    <div id=rss class="drag resize-drag" name="DS" style="display:none">
+        <div class="btn-group">
+          <h3><span class="color8">[~]</span><span class="color10">$</span><span class="colorf"> rss</span>
+          <button class="button" onclick="tabNT()" style="font-weight:normal">"Number Theory"</button>
+          <button class="button" onclick="tabDS()"><span class="color10">"Dynamical systems"</span></button>
+          <button class="button" onclick="tabNWS()" style="font-weight:normal">"News"</button>
+          </h3>
+        </div>
+        <div style="clear:both"></div>
+        <script src="//rss.bloople.net/?url=http%3A%2F%2Farxiv.org%2Frss%2Fmath.DS&detail=-1&showtitle=false&showicon=true&type=js"></script>
+    </div>
+
+    <div id=rss class="drag resize-drag" name="NEWS" style="display:none">
+        <div class="btn-group">
+          <h3><span class="color8">[~]</span><span class="color10">$</span><span class="colorf"> rss</span>
+          <button class="button" onclick="tabNT()" style="font-weight:normal">"Number Theory"</button>
+          <button class="button" onclick="tabDS()" style="font-weight:normal">"Dynamical systems"</button>
+          <button class="button" onclick="tabNWS()"><span class="color10">"News"</span></button>
+          </h3>
+        </div>
+        <div style="clear:both"></div>
+        <script src="//rss.bloople.net/?url=http%3A%2F%2Ffeeds.bbci.co.uk%2Fnews%2Frss.xml&detail=-1&showtitle=false&showicon=true&type=js"></script>
+        <!---
+        <h3><span class="color8">[~/links]</span><span class="color10">$</span></h3>
+            <span class="colorf"><a href="https://forum.manjaro.org/">Manjaro </a>
+                                 <br><a href="https://www.reddit.com/">Reddit</a>
+                                 <br><a href="https://www.theguardian.com">The Guardian</a>
+                                 <br><a href="https://online-go.com">OGS</a>
+                                 <br><a href="https://www.youtube.com">Youtube</a>
+                                 <br><a href="https://www.xkcd.com">XKCD</a>
+                                 <br><a href="https://www.thedailymash.co.uk">Daily Mash</a>
+                                 <br><a href="https://arxiv.org/list/math.DS/recent">Dynamics</a>
+                                 <br><a href="https://arxiv.org/list/math.NT/recent">Numbers</a>
+                                 <br><a href="https://www.josekipedia.com/">Josekipedia</a>
+                                 <br><a href="https://ps.waltheri.net/">Waltheri</a>
+
+            </span>
+            --->     
+    </div>
+	
+    <div id=clock class="drag resize-drag">
+  	<div ng-app="digitalclock" class="wrapper">
+  	<div class="aspect">
+    	<ng-clock hour="{{hour}}" minute="{{minute}}" second="{{second}}" class="clock cursor" ng-click="toToday()">
+        	<div class="cells" ng-repeat="1 in [1,2,3,4,5,6]">
+          	<div class="cell" ng-repeat="cell in digit track by $index"></div>
+        	</div>
+    	</ng-clock>
+  	</div>
+	</div>
+	</div>
+
+	<div id=fortune class="drag resize-drag">
+        <h3><span class="color8">[~]</span><span class="color10">$ </span><span class="colorf">fortune -a</span></h3>
+        <span class="color5"><div w3-include-html="fortune.html"></span>
+	</div>
+	</div>
+<script>
+w3IncludeHTML();
+</script>
+
+</body>
+</html>
