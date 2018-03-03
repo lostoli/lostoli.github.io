@@ -14,6 +14,20 @@
 <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.3.2/angular.min.js'></script>
 <script src="clock.js"></script>
 <script src="https://www.w3schools.com/lib/w3data.js"></script>
+<script type='text/Javascript' src='https://helloacm.com/jquery/jquery-2.1.4.min.js'></script>
+<script type='text/Javascript'>
+$(document).ready(function () {
+  $.ajax(
+    {
+        dataType: "json",
+        url: "https://helloacm.com/api/fortune/", 
+        cache: false, 
+        success: function (response) {
+        $(‘#fortune_text’).html(response)
+        }
+    })        
+});                
+</script>
 </head>
 
 <body>
@@ -91,7 +105,7 @@
 
 	<div id=fortune class="drag resize-drag">
         <h3><span class="color8">[~]</span><span class="color10">$ </span><span class="colorf">fortune -a</span></h3>
-        <span class="color5"><div w3-include-html="fortune.html"></span>
+        <span class="color5"> <div id='fortune_text'></span>
 	</div>
 	</div>
 <script>
