@@ -23,7 +23,7 @@ $(document).ready(function () {
         url: "https://helloacm.com/api/fortune/", 
         cache: false, 
         success: function (response) {
-        $(‘#fortune_text’).html(response)
+        $("#fortune_text").html(response);
         }
     })        
 });                
@@ -105,7 +105,7 @@ $(document).ready(function () {
 
 	<div id=fortune class="drag resize-drag">
         <h3><span class="color8">[~]</span><span class="color10">$ </span><span class="colorf">fortune -a</span></h3>
-        <span class="color5"> <div id='fortune_text'></span>
+        <span class="color5"> <div id="fortune_text"></span>
 	</div>
 	</div>
 <script>
