@@ -1,8 +1,19 @@
 <head>
 <meta http-equiv="refresh" content="600" >
+<script type='text/Javascript' src='https://helloacm.com/jquery/jquery-2.1.4.min.js'></script>
+<script type='text/Javascript'>
+$(document).ready(function () {
+  $.ajax(
+    {
+        dataType: "json",
+        url: "https://helloacm.com/api/fortune/", 
+        cache: false, 
+        success: function (response) {
+          document.write(response);
+        }
+    })        
+});                
+</script>
 </head>
 <body>
-If you wish women to love you, be original; I know a man who wore fur
-boots summer and winter, and women fell in love with him.
-		-- Anton Chekhov
 </body>
