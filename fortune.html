@@ -9,11 +9,12 @@ $(document).ready(function () {
         url: "https://helloacm.com/api/fortune/", 
         cache: false, 
         success: function (response) {
-          document.write(response);
+        $(‘#fortune_text’).html(response)
         }
     })        
 });                
 </script>
 </head>
 <body>
+    <div id='fortune_text'> </div>
 </body>
