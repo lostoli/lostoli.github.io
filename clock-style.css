@@ -1,5 +1,5 @@
 html {
-  background: #0a0d0d; }
+  background: #e1e3ce; }
 
 * {
   position: relative;
@@ -44,7 +44,7 @@ html {
   position: absolute;
   width: 22%;
   height: 15%;
-  background: #9eb8b7;
+  background: #492a24;
   border-radius: 100% 100%; }
 
 .aspect .clock .cells:nth-child(2n+2):after {
@@ -67,7 +67,7 @@ html {
   width: 33.3333%;
   height: 20%;
   overflow: hidden;
-  background: #9eb8b7;
+  background: #492a24;
   -webkit-background-clip: content !important;
   -moz-background-clip: content !important;
   background-clip: content-box !important;
@@ -121,7 +121,7 @@ html {
   position: absolute;
   width: 22%;
   height: 11%;
-  background: #9eb8b7;
+  background: #492a24;
   border-radius: 100% 100%; }
 
 .aspect .clocktwo .cells:nth-child(2n+2):after {
@@ -146,8 +146,8 @@ html {
   -o-transition: opacity 0.25s ease-in-out;
   -ms-transition: opacity 0.25s ease-in-out;
   transition: opacity 0.25s ease-in-out;
-  background: #9eb8b7;
-  border-color: #9eb8b7; }
+  background: #492a24;
+  border-color: #492a24; }
 
 .testbar:before,
 .testbar:after {
